@@ -1,0 +1,234 @@
+{
+  "tool": {
+    "id": "cha2ds2-vasc",
+    "title": "CHA₂DS₂-VASc",
+    "short": "Risco de AVC na fibrilação atrial",
+    "spec": [
+      "cardiologia",
+      "neurologia",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "desc": "Calculadora CHA₂DS₂-VASc (e CHA₂DS₂-VA da ESC 2024) para risco de AVC na fibrilação atrial não valvar, com taxa anual de eventos e indicação de anticoagulação.",
+    "lead": "Estima o risco anual de AVC e embolia na fibrilação atrial não valvar e orienta a indicação de anticoagulação oral.",
+    "fields": [
+      [
+        "icc",
+        "Insuficiência cardíaca ou disfunção de VE",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "has",
+        "Hipertensão",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "idade",
+        "Idade",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 65 anos",
+            "1": "65 a 74 anos",
+            "2": "≥ 75 anos"
+          }
+        }
+      ],
+      [
+        "dm",
+        "Diabetes",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "avc",
+        "AVC, AIT ou tromboembolismo prévio",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "vasc",
+        "Doença vascular (IAM prévio, doença arterial periférica, placa aórtica)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "fem",
+        "Sexo feminino",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "formula": "<p>C (ICC) 1 · H (hipertensão) 1 · A₂ (idade ≥ 75) 2 · D (diabetes) 1 · S₂ (AVC/AIT/TE) 2 · V (doença vascular) 1 · A (65 a 74 anos) 1 · Sc (sexo feminino) 1. Máximo: 9 pontos.</p><p>O <strong>CHA₂DS₂-VA</strong> (ESC 2024) é o mesmo escore sem o ponto do sexo feminino.</p>",
+    "table": [
+      [
+        "Pontos",
+        "AVC/TE ao ano*"
+      ],
+      [
+        "0",
+        "0%"
+      ],
+      [
+        "1",
+        "1,3%"
+      ],
+      [
+        "2",
+        "2,2%"
+      ],
+      [
+        "3",
+        "3,2%"
+      ],
+      [
+        "4",
+        "4,0%"
+      ],
+      [
+        "5",
+        "6,7%"
+      ],
+      [
+        "6",
+        "9,8%"
+      ],
+      [
+        "7",
+        "9,6%"
+      ],
+      [
+        "8",
+        "6,7%"
+      ],
+      [
+        "9",
+        "15,2%"
+      ]
+    ],
+    "table_note": "*Taxas ajustadas da coorte original (Lip 2010), sem anticoagulação.",
+    "tips": [
+      "ESC 2024: use o <strong>CHA₂DS₂-VA</strong>. Anticoagulação recomendada com ≥ 2 pontos e deve ser considerada com 1 ponto.",
+      "Pela ESC 2020 (CHA₂DS₂-VASc): anticoagular homens com ≥ 2 e mulheres com ≥ 3; considerar em homens com 1 e mulheres com 2. O sexo feminino isolado não indica anticoagulação.",
+      "Prefira os anticoagulantes diretos (DOACs) à varfarina, exceto em prótese valvar mecânica e estenose mitral moderada a grave, em que o escore não se aplica.",
+      "Reavalie o escore periodicamente: idade e novas comorbidades mudam a indicação.",
+      "Um HAS-BLED alto não contraindica a anticoagulação: serve para corrigir fatores de sangramento modificáveis."
+    ],
+    "sources": [
+      [
+        "Lip GYH et al. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation. Chest, 2010.",
+        "https://doi.org/10.1378/chest.09-1584"
+      ],
+      [
+        "Van Gelder IC et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J, 2024.",
+        "https://doi.org/10.1093/eurheartj/ehae176"
+      ],
+      [
+        "Hindricks G et al. 2020 ESC Guidelines for the diagnosis and management of atrial fibrillation. Eur Heart J, 2021.",
+        "https://doi.org/10.1093/eurheartj/ehaa612"
+      ]
+    ],
+    "cases": [
+      [
+        "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        {
+          "icc": true,
+          "has": true,
+          "idade": "2",
+          "dm": true,
+          "avc": true,
+          "vasc": true,
+          "fem": true
+        },
+        {
+          "raw": {
+            "score": 9,
+            "va": 8
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        {
+          "has": true,
+          "idade": "1"
+        },
+        {
+          "raw": {
+            "va": 2
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        {
+          "fem": true,
+          "idade": "0"
+        },
+        {
+          "raw": {
+            "score": 1,
+            "va": 0
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "id": "cha2ds2-vasc",
+    "status": "source-checked",
+    "reason": "Conferidos os componentes do escore e a distinção CHA₂DS₂-VA da ESC 2024. Fonte conferida apenas para o cálculo numérico. O número não estabelece sozinho indicação de anticoagulante; percentuais anuais e recomendações automáticas do ZIP devem ficar ocultos.",
+    "sourceUrl": "https://www.escardio.org/static-file/Escardio/Guidelines/Products/Essential%20Messages/2024%20EM/Essential%20Messages_2024%20AFib.pdf",
+    "sourceTitle": "ESC — Essential Messages, Atrial Fibrillation 2024",
+    "sourceDate": "2024",
+    "publisherRegion": "Europa / ESC",
+    "checkedAt": "2026-09-25",
+    "clinicalValidation": "not-performed",
+    "reviewScope": "componentes e versão do escore; sem validação clínica",
+    "formulaOverride": "CHA₂DS₂-VASc = IC (1) + hipertensão (1) + idade ≥75 (2) ou 65–74 (1) + diabetes (1) + AVC/AIT/TE (2) + doença vascular (1) + sexo feminino (1). CHA₂DS₂-VA omite o componente sexo."
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "label": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+    "input": {
+      "icc": true,
+      "has": true,
+      "idade": "2",
+      "dm": true,
+      "avc": true,
+      "vasc": true,
+      "fem": true
+    },
+    "expected": {
+      "raw": {
+        "score": 9,
+        "va": 8
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "icc": true,
+      "has": true,
+      "idade": "2",
+      "dm": true,
+      "avc": true,
+      "vasc": true,
+      "fem": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+    "input": {
+      "has": true,
+      "idade": "1"
+    },
+    "expected": {
+      "raw": {
+        "va": 2
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "has": true,
+      "idade": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+    "input": {
+      "fem": true,
+      "idade": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 1,
+        "va": 0
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "fem": true,
+      "idade": "0"
+    },
+    "expandedZeroOptions": []
+  }
+]

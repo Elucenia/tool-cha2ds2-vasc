@@ -190,13 +190,9 @@
         }
       ]
     ],
-    "batch": "cardiologia",
     "kind": "Calculadora",
     "config": null,
-    "areaId": "cardiotoracica",
     "clinicalReview": "pending",
-    "sourceReview": "pending",
-    "sourceFile": "app/content/ferramentas/cardiologia.php",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -224,11 +220,6 @@
     "clinicalValidation": "not-performed",
     "reviewScope": "componentes e versão do escore; sem validação clínica",
     "formulaOverride": "CHA₂DS₂-VASc = IC (1) + hipertensão (1) + idade ≥75 (2) ou 65–74 (1) + diabetes (1) + AVC/AIT/TE (2) + doença vascular (1) + sexo feminino (1). CHA₂DS₂-VA omite o componente sexo."
-  },
-  "sourceFile": {
-    "path": "app/content/ferramentas/cardiologia.php",
-    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
-    "bytes": 61303
   },
   "clinicalValidation": "not-performed"
 }

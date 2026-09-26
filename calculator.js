@@ -1,11 +1,11 @@
-/* tool-cha2ds2-vasc · Elucenia · https://github.com/Elucenia/tool-cha2ds2-vasc
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-cha2ds2-vasc · ELUCENIA · https://github.com/Elucenia/tool-cha2ds2-vasc
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"cha2ds2-vasc","title":"CHA₂DS₂-VASc","fields":[["icc","Insuficiência cardíaca ou disfunção de VE","chk",{"pts":1}],["has","Hipertensão","chk",{"pts":1}],["idade","Idade","radio",{"opts":{"0":"&lt; 65 anos","1":"65 a 74 anos","2":"≥ 75 anos"}}],["dm","Diabetes","chk",{"pts":1}],["avc","AVC, AIT ou tromboembolismo prévio","chk",{"pts":2}],["vasc","Doença vascular (IAM prévio, doença arterial periférica, placa aórtica)","chk",{"pts":1}],["fem","Sexo feminino","chk",{"pts":1}]],"config":null,"reviewStatus":"source-checked","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

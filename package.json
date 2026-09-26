@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-cha2ds2-vasc",
   "version": "0.1.0",
-  "description": "CHA₂DS₂-VASc · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "CHA₂DS₂-VASc · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",

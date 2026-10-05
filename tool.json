@@ -3,30 +3,26 @@
     "id": "cha2ds2-vasc",
     "title": "CHA₂DS₂-VASc",
     "short": "Risco de AVC na fibrilação atrial",
+    "desc": "Calculadora CHA₂DS₂-VASc (e CHA₂DS₂-VA da ESC 2024) para risco de AVC na fibrilação atrial não valvar, com taxa anual de eventos e indicação de anticoagulação.",
+    "lead": "Estima o risco anual de AVC e embolia na fibrilação atrial não valvar e orienta a indicação de anticoagulação oral.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "neurologia",
       "clinica-medica"
     ],
-    "tier": 1,
-    "desc": "Calculadora CHA₂DS₂-VASc (e CHA₂DS₂-VA da ESC 2024) para risco de AVC na fibrilação atrial não valvar, com taxa anual de eventos e indicação de anticoagulação.",
-    "lead": "Estima o risco anual de AVC e embolia na fibrilação atrial não valvar e orienta a indicação de anticoagulação oral.",
     "fields": [
       [
         "icc",
         "Insuficiência cardíaca ou disfunção de VE",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "has",
         "Hipertensão",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "idade",
@@ -44,90 +40,28 @@
         "dm",
         "Diabetes",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "avc",
         "AVC, AIT ou tromboembolismo prévio",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "vasc",
         "Doença vascular (IAM prévio, doença arterial periférica, placa aórtica)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "fem",
         "Sexo feminino",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
     "formula": "<p>C (ICC) 1 · H (hipertensão) 1 · A₂ (idade ≥ 75) 2 · D (diabetes) 1 · S₂ (AVC/AIT/TE) 2 · V (doença vascular) 1 · A (65 a 74 anos) 1 · Sc (sexo feminino) 1. Máximo: 9 pontos.</p><p>O <strong>CHA₂DS₂-VA</strong> (ESC 2024) é o mesmo escore sem o ponto do sexo feminino.</p>",
-    "table": [
-      [
-        "Pontos",
-        "AVC/TE ao ano*"
-      ],
-      [
-        "0",
-        "0%"
-      ],
-      [
-        "1",
-        "1,3%"
-      ],
-      [
-        "2",
-        "2,2%"
-      ],
-      [
-        "3",
-        "3,2%"
-      ],
-      [
-        "4",
-        "4,0%"
-      ],
-      [
-        "5",
-        "6,7%"
-      ],
-      [
-        "6",
-        "9,8%"
-      ],
-      [
-        "7",
-        "9,6%"
-      ],
-      [
-        "8",
-        "6,7%"
-      ],
-      [
-        "9",
-        "15,2%"
-      ]
-    ],
-    "table_note": "*Taxas ajustadas da coorte original (Lip 2010), sem anticoagulação.",
-    "tips": [
-      "ESC 2024: use o <strong>CHA₂DS₂-VA</strong>. Anticoagulação recomendada com ≥ 2 pontos e deve ser considerada com 1 ponto.",
-      "Pela ESC 2020 (CHA₂DS₂-VASc): anticoagular homens com ≥ 2 e mulheres com ≥ 3; considerar em homens com 1 e mulheres com 2. O sexo feminino isolado não indica anticoagulação.",
-      "Prefira os anticoagulantes diretos (DOACs) à varfarina, exceto em prótese valvar mecânica e estenose mitral moderada a grave, em que o escore não se aplica.",
-      "Reavalie o escore periodicamente: idade e novas comorbidades mudam a indicação.",
-      "Um HAS-BLED alto não contraindica a anticoagulação: serve para corrigir fatores de sangramento modificáveis."
-    ],
     "sources": [
       [
         "Lip GYH et al. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation. Chest, 2010.",
@@ -190,9 +124,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -201,25 +132,209 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T00:48:48.914Z",
+      "total": 192,
+      "passed": 192,
+      "evidencePath": "reports/review-20261003/additional-native-scoring-source-oracles-final19.json",
+      "evidenceSha256": "8f1eeb174b60822ed95db7c00b389f25d9f5ec4d1eb592cf2c9eaeebccd0717a",
+      "scope": "All192 scoring combinations only. Clinical factor assessment, risk percentages and anticoagulation recommendations are not approved by this test.",
+      "source": {
+        "edition": "Lip2010 score weights, published in ACC/AHA/ACCP/HRS2023 Table8 and Table20 footnote; ESC2024 CHA2DS2-VA omits the sex point",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/",
+        "locator": "Table8/ Table20 footnote",
+        "access": "Official guideline article opened; exact numerical scoring table read. ESC2024 Table10 accessed as indexed text; direct publisher retrieval failed.",
+        "additionalUrl": "https://academic.oup.com/eurheartj/article/45/36/3314/7738779",
+        "scope": "All192 scoring combinations only. Clinical factor assessment, risk percentages and anticoagulation recommendations are not approved by this test."
+      },
+      "executionBuild": {
+        "id": "IguaqI9wAzb-9t1Sb-4Ph",
+        "directory": ".next-private-final19"
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "fullSourceConformanceApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "CHA 2 DS 2 VASc/Lip 2010 e CHA 2 DS 2 VA/ESC 2024; máximo 9/8",
+    "implementationVersion": "cha2ds2-vasc@native-2026-10-03+a3a1f69df8a8",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/19762550/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "C (ICC) 1 · H (hipertensão) 1 · A₂ (idade ≥ 75) 2 · D (diabetes) 1 · S₂ (AVC/AIT/TE) 2 · V (doença vascular) 1 · A (65 a 74 anos) 1 · Sc (sexo feminino) 1. Máximo: 9 pontos. O CHA₂DS₂-VA (ESC 2024) é o mesmo escore sem o ponto do sexo feminino.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "icc",
+            "label": "Insuficiência cardíaca ou disfunção de VE",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "has",
+            "label": "Hipertensão",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 65 anos",
+              "1": "65 a 74 anos",
+              "2": "≥ 75 anos"
+            }
+          },
+          {
+            "key": "dm",
+            "label": "Diabetes",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "avc",
+            "label": "AVC, AIT ou tromboembolismo prévio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vasc",
+            "label": "Doença vascular (IAM prévio, doença arterial periférica, placa aórtica)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fem",
+            "label": "Sexo feminino",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "518f011abe54b216c6935ef5c97388e0b6895b2fe3cadd8cd09f2d6ad7baa949"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Lip GYH et al. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation. Chest, 2010.",
+          "url": "https://doi.org/10.1378/chest.09-1584",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the euro heart survey on atrial fibrillation.",
+            "year": "2010",
+            "firstPublicationDate": "2009-09-17",
+            "doi": "10.1378/chest.09-1584",
+            "pmid": "19762550",
+            "journal": "Chest",
+            "authors": "Lip GY, Nieuwlaat R, Pisters R, Lane DA, Crijns HJ."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/19762550/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c15003606918e7a53788ddde7de57bd30af3813cf177aec283786b6b65bf3656",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Van Gelder IC et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J, 2024.",
+          "url": "https://doi.org/10.1093/eurheartj/ehae176",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS).",
+            "year": "2024",
+            "firstPublicationDate": "2024-09-01",
+            "doi": "10.1093/eurheartj/ehae176",
+            "pmid": "39210723",
+            "journal": "European heart journal",
+            "authors": "Van Gelder IC, Rienstra M, Bunting KV, Casado-Arroyo R, Caso V, Crijns HJGM, De Potter TJR, Dwight J, Guasti L, Hanke T, Jaarsma T, Lettino M, Løchen ML, Lumbers RT, Maesen B, Mølgaard I, Rosano GMC, Sanders P, Schnabel RB, Suwalski P, Svennberg E, Tamargo J, Tica O, Traykov V, Tzeis S, Kotecha D, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/39210723/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Hindricks G et al. 2020 ESC Guidelines for the diagnosis and management of atrial fibrillation. Eur Heart J, 2021.",
+          "url": "https://doi.org/10.1093/eurheartj/ehaa612",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2020 ESC Guidelines for the diagnosis and management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS): The Task Force for the diagnosis and management of atrial fibrillation of the European Society of Cardiology (ESC) Developed with the special contribution of the European Heart Rhythm Association (EHRA) of the ESC.",
+            "year": "2021",
+            "firstPublicationDate": "2021-02-01",
+            "doi": "10.1093/eurheartj/ehaa612",
+            "pmid": "32860505",
+            "journal": "European heart journal",
+            "authors": "Hindricks G, Potpara T, Dagres N, Arbelo E, Bax JJ, Blomström-Lundqvist C, Boriani G, Castella M, Dan GA, Dilaveris PE, Fauchier L, Filippatos G, Kalman JM, La Meir M, Lane DA, Lebeau JP, Lettino M, Lip GYH, Pinto FJ, Thomas GN, Valgimigli M, Van Gelder IC, Van Putte BP, Watkins CL, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/32860505/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T00:48:48.914Z",
+        "total": 192,
+        "passed": 192,
+        "evidencePath": "reports/review-20261003/additional-native-scoring-source-oracles-final19.json",
+        "evidenceSha256": "8f1eeb174b60822ed95db7c00b389f25d9f5ec4d1eb592cf2c9eaeebccd0717a",
+        "scope": "All192 scoring combinations only. Clinical factor assessment, risk percentages and anticoagulation recommendations are not approved by this test."
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a"
+    },
+    "limits": "A publicação Lip 2010 avaliou estratificação de tromboembolismo em pacientes com fibrilação atrial e descreveu capacidade preditiva modesta dos esquemas comparados. Categorias ou taxas observadas nessa coorte não são uma garantia individual de risco zero. A variante CHA2DS2-VA e decisões de anticoagulação exigem a diretriz e a população correspondentes à edição utilizada.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.757Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Não fornece toda elegibilidade/exclusões nem cortes terapêuticos atuais. CHA 2 DS 2-VA e condutas ESC 2024 precisam de leitura da diretriz correspondente, sem misturar edições."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "id": "cha2ds2-vasc",
-    "status": "source-checked",
-    "reason": "Conferidos os componentes do escore e a distinção CHA₂DS₂-VA da ESC 2024. Fonte conferida apenas para o cálculo numérico. O número não estabelece sozinho indicação de anticoagulante; percentuais anuais e recomendações automáticas do ZIP devem ficar ocultos.",
-    "sourceUrl": "https://www.escardio.org/static-file/Escardio/Guidelines/Products/Essential%20Messages/2024%20EM/Essential%20Messages_2024%20AFib.pdf",
-    "sourceTitle": "ESC — Essential Messages, Atrial Fibrillation 2024",
-    "sourceDate": "2024",
-    "publisherRegion": "Europa / ESC",
-    "checkedAt": "2026-09-25",
-    "clinicalValidation": "not-performed",
-    "reviewScope": "componentes e versão do escore; sem validação clínica",
-    "formulaOverride": "CHA₂DS₂-VASc = IC (1) + hipertensão (1) + idade ≥75 (2) ou 65–74 (1) + diabetes (1) + AVC/AIT/TE (2) + doença vascular (1) + sexo feminino (1). CHA₂DS₂-VA omite o componente sexo."
+  "currentSource": {
+    "file": "apps/website/private/tool-code/cha2ds2-vasc/calculator.js",
+    "bytes": 5151,
+    "sha256": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "2c7f06548c61316d2d2aa317a1911436c2d7e0589b743275abdb1e6c27c59e71",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 192,
+      "sha256": "69ad0c28142b662cfdd2b76d87ddf1fc8738e2dca19126469120f9411ac3b001",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

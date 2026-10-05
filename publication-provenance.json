@@ -1,0 +1,306 @@
+{
+  "schema": "elucenia-native190-current-source-candidate-r1",
+  "id": "cha2ds2-vasc",
+  "repository": "Elucenia/tool-cha2ds2-vasc",
+  "remoteBase": {
+    "id": "cha2ds2-vasc",
+    "repository": "Elucenia/tool-cha2ds2-vasc",
+    "branch": "main",
+    "commit": "0d2a8dd71457675e3b02c06506a70ed2c00e034f",
+    "archiveSha256": "ccd991745b138d5c6a899fe7d8f37006005ab665a36a7cd9386479ca196c5548",
+    "protectedFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3253,
+        "sha": "564386cfd395fd46a227655bc3551d5dee780f47",
+        "sha256": "5dce7857c73f101613ea1328bb230b75c956f85598bef4652e24d3d6ee1d3cea"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 873,
+        "sha": "283e655a81fcb97599441cb04b991a98ee0b9e50",
+        "sha256": "792c1ae1690a5be402fc274a97516d4c9f6d2b4a672071da2ca887b230f3ebc4"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1463,
+        "sha": "f8fae72d115d034c1c918a17a037b524cc75c4a7",
+        "sha256": "b9976e9011ce62b76532c0729e46726d96a2e57cbed1d99f649ee3a2ded4bd40"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1605,
+        "sha": "2ce407e6b47e0af793fc3db57fb79ae1ea25e8fb",
+        "sha256": "535bcf171e7512b5063f2a17ecded063332b92a2692e73430321e9616ca7f64a"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "receipt": {
+      "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+      "bytes": 6066154,
+      "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+    },
+    "remoteCodeExecuted": false,
+    "freshBranchReadRequiredBeforePublication": true
+  },
+  "priorAuthorialStandalone": {
+    "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+    "bytes": 6823260,
+    "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/cha2ds2-vasc/calculator.js",
+    "bytes": 5151,
+    "sha256": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a"
+  },
+  "browserAdapterIdentical": true,
+  "methodVersion": "CHA 2 DS 2 VASc/Lip 2010 e CHA 2 DS 2 VA/ESC 2024; máximo 9/8",
+  "implementationVersion": "cha2ds2-vasc@native-2026-10-03+a3a1f69df8a8",
+  "locales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "apps/dashboard/private/localization/pt-BR.json",
+      "bytes": 13601911,
+      "sha256": "347c306e9e588d9bff853ab948f100b2ce00d7adb88efb821e39c2799deb1806"
+    },
+    {
+      "file": "apps/dashboard/private/localization/en.json",
+      "bytes": 13681895,
+      "sha256": "e14119d6179a16e4af0998cb86cd7332e72eccae8a8257000b4ea940a5919f2b"
+    },
+    {
+      "file": "apps/dashboard/private/localization/es.json",
+      "bytes": 13727824,
+      "sha256": "52dce27b11b7d4bd0b0e599e66e24beb802f99068554f76c34ef81c98d7e164f"
+    },
+    {
+      "file": "apps/dashboard/private/localization/fr.json",
+      "bytes": 13775177,
+      "sha256": "e4ffcf4c7a5378bb9527a544548c6d8364aa309ea38f567359f8f198eee6c7c9"
+    },
+    {
+      "file": "apps/dashboard/private/localization/de.json",
+      "bytes": 13749397,
+      "sha256": "c92817a3fa8412a4f878061d3ac1c56be6d114aae1c3232c25f79c6ce7d597f4"
+    },
+    {
+      "file": "apps/dashboard/private/localization/it.json",
+      "bytes": 13726317,
+      "sha256": "5c7c142087de8016a75759669a7271a9048d9544b1a1383c626fafa7be0ece39"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ar.json",
+      "bytes": 13962469,
+      "sha256": "c3a3cf978eeac700c01847f49bc4dd12759499a6973fa36733bc290786f9246d"
+    },
+    {
+      "file": "apps/dashboard/private/localization/zh.json",
+      "bytes": 13590420,
+      "sha256": "eb2c7d8d5b980d6d43e44bcc135bcde31565fab0290bf595f84975dec6fb294e"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ja.json",
+      "bytes": 13729894,
+      "sha256": "eb524f45c7e9ce0fc3e951b159c102294d6702a1858a1f43f7e920c69fa1a290"
+    },
+    {
+      "file": "apps/dashboard/private/localization/hi.json",
+      "bytes": 14418664,
+      "sha256": "fe93d7fc31e91ed8c9d3acee80261a2f8ad74b77c86e6e28f9b4cadf5d9f048f"
+    }
+  ],
+  "referenceBank": {
+    "file": "reports/review-20261003/source-cases-audit.json",
+    "bytes": 885399,
+    "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+  },
+  "comparisonProgram": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "bytes": 20735,
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa"
+  },
+  "sourceNodeParityPassed": true,
+  "browserVmParityPassed": true,
+  "actualBrowserDomVerified": false,
+  "currentActualR6HttpEvidence": "pending",
+  "rights": {
+    "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
+    "sourceAdapter": {
+      "file": "apps/website/private/tool-code/cha2ds2-vasc/calculator.js",
+      "bytes": 5151,
+      "sha256": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a"
+    },
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/cha2ds2-vasc/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/cha2ds2-vasc/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedRemoteFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3253,
+        "sha": "564386cfd395fd46a227655bc3551d5dee780f47",
+        "sha256": "5dce7857c73f101613ea1328bb230b75c956f85598bef4652e24d3d6ee1d3cea"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 873,
+        "sha": "283e655a81fcb97599441cb04b991a98ee0b9e50",
+        "sha256": "792c1ae1690a5be402fc274a97516d4c9f6d2b4a672071da2ca887b230f3ebc4"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1463,
+        "sha": "f8fae72d115d034c1c918a17a037b524cc75c4a7",
+        "sha256": "b9976e9011ce62b76532c0729e46726d96a2e57cbed1d99f649ee3a2ded4bd40"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1605,
+        "sha": "2ce407e6b47e0af793fc3db57fb79ae1ea25e8fb",
+        "sha256": "535bcf171e7512b5063f2a17ecded063332b92a2692e73430321e9616ca7f64a"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "sourceMaterialScope": "Published mathematical/Boolean method implemented in ELUCENIA code; source-specific clinical descriptions and questionnaire expression remain separate from code ownership/licensing",
+    "scientificSources": [
+      [
+        "Lip GYH et al. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation. Chest, 2010.",
+        "https://doi.org/10.1378/chest.09-1584"
+      ],
+      [
+        "Van Gelder IC et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J, 2024.",
+        "https://doi.org/10.1093/eurheartj/ehae176"
+      ],
+      [
+        "Hindricks G et al. 2020 ESC Guidelines for the diagnosis and management of atrial fibrillation. Eur Heart J, 2021.",
+        "https://doi.org/10.1093/eurheartj/ehaa612"
+      ]
+    ],
+    "methodVersion": "CHA 2 DS 2 VASc/Lip 2010 e CHA 2 DS 2 VA/ESC 2024; máximo 9/8",
+    "grantRecordedInNotice": true,
+    "thirdPartyInstrumentRightsApproval": "not-performed",
+    "wholeInstrumentApproval": false,
+    "professionalTranslationApproval": false,
+    "clinicalApproval": false,
+    "remainingScopeReview": "Check source-specific wording, questionnaire/instrument and translation conditions before treating the complete mixed bundle as cleared; no grant is inferred from public accessibility or code licence"
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "externalPublicationReady": false,
+  "publicationPerformed": false,
+  "appWrites": false,
+  "deliveryWrites": false
+}

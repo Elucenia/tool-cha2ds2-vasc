@@ -1,6 +1,18 @@
 [
   {
-    "label": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+    "id": "cha2ds2-vasc",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+    "originalInput": {
+      "icc": true,
+      "has": true,
+      "idade": "2",
+      "dm": true,
+      "avc": true,
+      "vasc": true,
+      "fem": true
+    },
     "input": {
       "icc": true,
       "has": true,
@@ -17,22 +29,43 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "icc": true,
-      "has": true,
-      "idade": "2",
-      "dm": true,
-      "avc": true,
-      "vasc": true,
-      "fem": true
+    "recordedResult": {
+      "main": [
+        "9",
+        "pontos"
+      ],
+      "label": "CHA₂DS₂-VASc",
+      "raw": {
+        "score": 9,
+        "va": 8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
-    "input": {
+    "id": "cha2ds2-vasc",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+    "originalInput": {
       "has": true,
       "idade": "1"
+    },
+    "input": {
+      "has": true,
+      "idade": "1",
+      "icc": false,
+      "dm": false,
+      "avc": false,
+      "vasc": false,
+      "fem": false
     },
     "expected": {
       "raw": {
@@ -40,17 +73,43 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "has": true,
-      "idade": "1"
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "CHA₂DS₂-VASc",
+      "raw": {
+        "score": 2,
+        "va": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
-    "input": {
+    "id": "cha2ds2-vasc",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+    "originalInput": {
       "fem": true,
       "idade": "0"
+    },
+    "input": {
+      "fem": true,
+      "idade": "0",
+      "icc": false,
+      "has": false,
+      "dm": false,
+      "avc": false,
+      "vasc": false
     },
     "expected": {
       "raw": {
@@ -59,10 +118,24 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "fem": true,
-      "idade": "0"
+    "recordedResult": {
+      "main": [
+        "1",
+        "pontos"
+      ],
+      "label": "CHA₂DS₂-VASc",
+      "raw": {
+        "score": 1,
+        "va": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

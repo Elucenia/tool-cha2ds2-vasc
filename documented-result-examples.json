@@ -1,0 +1,1359 @@
+{
+  "id": "cha2ds2-vasc",
+  "implementationVersion": "cha2ds2-vasc@native-2026-10-05+d9b8ccb45efb",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sem o sexo)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "8 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AVC/TE ao ano sem anticoagulação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "15,2%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulação oral recomendada (ESC 2024)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sem o sexo)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AVC/TE ao ano sem anticoagulação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,2%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulação oral recomendada (ESC 2024)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sem o sexo)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AVC/TE ao ano sem anticoagulação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,3%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sem indicação de anticoagulação pelo escore (ESC 2024)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (without sex)",
+                "locale": "en",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 points",
+                "locale": "en",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Stroke/TE per year without anticoagulation",
+                "locale": "en",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15.2%",
+                "locale": "en",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Oral anticoagulation recommended (ESC 2024)",
+            "locale": "en",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (without sex)",
+                "locale": "en",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 points",
+                "locale": "en",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Stroke/TE per year without anticoagulation",
+                "locale": "en",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2.2%",
+                "locale": "en",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Oral anticoagulation recommended (ESC 2024)",
+            "locale": "en",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (without sex)",
+                "locale": "en",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "en",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Stroke/TE per year without anticoagulation",
+                "locale": "en",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1.3%",
+                "locale": "en",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No indication for anticoagulation by the score (ESC 2024)",
+            "locale": "en",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sin el sexo)",
+                "locale": "es",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 puntos",
+                "locale": "es",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ACV/TE por año sin anticoagulación",
+                "locale": "es",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15,2%",
+                "locale": "es",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulación oral recomendada (ESC 2024)",
+            "locale": "es",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sin el sexo)",
+                "locale": "es",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 puntos",
+                "locale": "es",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ACV/TE por año sin anticoagulación",
+                "locale": "es",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2,2%",
+                "locale": "es",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulación oral recomendada (ESC 2024)",
+            "locale": "es",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sin el sexo)",
+                "locale": "es",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 puntos",
+                "locale": "es",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ACV/TE por año sin anticoagulación",
+                "locale": "es",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1,3%",
+                "locale": "es",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sin indicación de anticoagulación por la puntuación (ESC 2024)",
+            "locale": "es",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sans le sexe)",
+                "locale": "fr",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 points",
+                "locale": "fr",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AVC/TE par an sans anticoagulation",
+                "locale": "fr",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15,2%",
+                "locale": "fr",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulation orale recommandée (ESC 2024)",
+            "locale": "fr",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sans le sexe)",
+                "locale": "fr",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 points",
+                "locale": "fr",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AVC/TE par an sans anticoagulation",
+                "locale": "fr",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2,2%",
+                "locale": "fr",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulation orale recommandée (ESC 2024)",
+            "locale": "fr",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (sans le sexe)",
+                "locale": "fr",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "fr",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AVC/TE par an sans anticoagulation",
+                "locale": "fr",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1,3%",
+                "locale": "fr",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Aucune indication d’anticoagulation selon le score (ESC 2024)",
+            "locale": "fr",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (ohne Geschlecht)",
+                "locale": "de",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 Punkte",
+                "locale": "de",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Schlaganfall/TE pro Jahr ohne Antikoagulation",
+                "locale": "de",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15,2%",
+                "locale": "de",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Orale Antikoagulation empfohlen (ESC 2024)",
+            "locale": "de",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (ohne Geschlecht)",
+                "locale": "de",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 Punkte",
+                "locale": "de",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Schlaganfall/TE pro Jahr ohne Antikoagulation",
+                "locale": "de",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2,2%",
+                "locale": "de",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Orale Antikoagulation empfohlen (ESC 2024)",
+            "locale": "de",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (ohne Geschlecht)",
+                "locale": "de",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 Punkte",
+                "locale": "de",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Schlaganfall/TE pro Jahr ohne Antikoagulation",
+                "locale": "de",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1,3%",
+                "locale": "de",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Keine Indikation für eine Antikoagulation anhand des Scores (ESC 2024)",
+            "locale": "de",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (senza il sesso)",
+                "locale": "it",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 punti",
+                "locale": "it",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ICTUS/TE all’anno senza anticoagulazione",
+                "locale": "it",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15,2%",
+                "locale": "it",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulazione orale raccomandata (ESC 2024)",
+            "locale": "it",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (senza il sesso)",
+                "locale": "it",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 punti",
+                "locale": "it",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ICTUS/TE all’anno senza anticoagulazione",
+                "locale": "it",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2,2%",
+                "locale": "it",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anticoagulazione orale raccomandata (ESC 2024)",
+            "locale": "it",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (senza il sesso)",
+                "locale": "it",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 punti",
+                "locale": "it",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ICTUS/TE all’anno senza anticoagulazione",
+                "locale": "it",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1,3%",
+                "locale": "it",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nessuna indicazione all’anticoagulazione in base al punteggio (ESC 2024)",
+            "locale": "it",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (من دون الجنس)",
+                "locale": "ar",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "٨ نقاط",
+                "locale": "ar",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "سكتة دماغية/TE سنويًا دون مضاد تخثر",
+                "locale": "ar",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "١٥٫٢%",
+                "locale": "ar",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "يوصى بمضاد التخثر الفموي (ESC 2024)",
+            "locale": "ar",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (من دون الجنس)",
+                "locale": "ar",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "٢ نقاط",
+                "locale": "ar",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "سكتة دماغية/TE سنويًا دون مضاد تخثر",
+                "locale": "ar",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "٢٫٢%",
+                "locale": "ar",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "يوصى بمضاد التخثر الفموي (ESC 2024)",
+            "locale": "ar",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (من دون الجنس)",
+                "locale": "ar",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "٠ نقاط",
+                "locale": "ar",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "سكتة دماغية/TE سنويًا دون مضاد تخثر",
+                "locale": "ar",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "١٫٣%",
+                "locale": "ar",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا توجد دلالة على مضاد التخثر بحسب الدرجة (ESC 2024)",
+            "locale": "ar",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA（不含性别）",
+                "locale": "zh",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 分",
+                "locale": "zh",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "未抗凝时每年的卒中/TE",
+                "locale": "zh",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15.2%",
+                "locale": "zh",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "建议口服抗凝（ESC 2024）",
+            "locale": "zh",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA（不含性别）",
+                "locale": "zh",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 分",
+                "locale": "zh",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "未抗凝时每年的卒中/TE",
+                "locale": "zh",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2.2%",
+                "locale": "zh",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "建议口服抗凝（ESC 2024）",
+            "locale": "zh",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA（不含性别）",
+                "locale": "zh",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 分",
+                "locale": "zh",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "未抗凝时每年的卒中/TE",
+                "locale": "zh",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1.3%",
+                "locale": "zh",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "根据评分无抗凝指征（ESC 2024）",
+            "locale": "zh",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA（性別なし）",
+                "locale": "ja",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 点",
+                "locale": "ja",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "抗凝固療法なしの年間脳卒中/TE",
+                "locale": "ja",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15.2%",
+                "locale": "ja",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "経口抗凝固療法が推奨される（ESC 2024）",
+            "locale": "ja",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA（性別なし）",
+                "locale": "ja",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 点",
+                "locale": "ja",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "抗凝固療法なしの年間脳卒中/TE",
+                "locale": "ja",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2.2%",
+                "locale": "ja",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "経口抗凝固療法が推奨される（ESC 2024）",
+            "locale": "ja",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA（性別なし）",
+                "locale": "ja",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 点",
+                "locale": "ja",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "抗凝固療法なしの年間脳卒中/TE",
+                "locale": "ja",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1.3%",
+                "locale": "ja",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "スコアによる抗凝固療法の適応なし（ESC 2024）",
+            "locale": "ja",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (लिंग के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "8 अंक",
+                "locale": "hi",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एंटीकोआग्युलेशन के बिना प्रति वर्ष स्ट्रोक/TE",
+                "locale": "hi",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "15.2%",
+                "locale": "hi",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  15.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मौखिक एंटीकोआग्युलेशन की सिफारिश की जाती है (ESC 2024)",
+            "locale": "hi",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (लिंग के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "2 अंक",
+                "locale": "hi",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एंटीकोआग्युलेशन के बिना प्रति वर्ष स्ट्रोक/TE",
+                "locale": "hi",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "2.2%",
+                "locale": "hi",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  2.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मौखिक एंटीकोआग्युलेशन की सिफारिश की जाती है (ESC 2024)",
+            "locale": "hi",
+            "template": "documented-authored-1e62e5f1f503db000249"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CHA₂DS₂-VA (लिंग के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-b2bcf1a776c9d0cf4771"
+              },
+              "value": {
+                "text": "0 अंक",
+                "locale": "hi",
+                "template": "documented-authored-6067dac6befb8133c5fc",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एंटीकोआग्युलेशन के बिना प्रति वर्ष स्ट्रोक/TE",
+                "locale": "hi",
+                "template": "documented-authored-8a88ec1d8dcdc2dd69fc"
+              },
+              "value": {
+                "text": "1.3%",
+                "locale": "hi",
+                "template": "documented-authored-1bc17543fe8392dd726b",
+                "sourceNumbers": [
+                  1.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "स्कोर के आधार पर एंटीकोआग्युलेशन का कोई संकेत नहीं (ESC 2024)",
+            "locale": "hi",
+            "template": "documented-authored-62fd0db150d5a9d13233"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

@@ -89,3 +89,37 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Oral anticoagulation recommended (ESC 2024)
+
+| Result details | |
+| --- | --- |
+| CHA₂DS₂-VA (without sex) | 8 points |
+| Stroke/TE per year without anticoagulation | 15.2% |
+
+
+### 2
+
+Oral anticoagulation recommended (ESC 2024)
+
+| Result details | |
+| --- | --- |
+| CHA₂DS₂-VA (without sex) | 2 points |
+| Stroke/TE per year without anticoagulation | 2.2% |
+
+
+### 3
+
+No indication for anticoagulation by the score (ESC 2024)
+
+| Result details | |
+| --- | --- |
+| CHA₂DS₂-VA (without sex) | 0 points |
+| Stroke/TE per year without anticoagulation | 1.3% |
+

@@ -89,3 +89,37 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Anticoagulazione orale raccomandata (ESC 2024)
+
+| Dettagli del risultato | |
+| --- | --- |
+| CHA₂DS₂-VA (senza il sesso) | 8 punti |
+| ICTUS/TE all’anno senza anticoagulazione | 15,2% |
+
+
+### 2
+
+Anticoagulazione orale raccomandata (ESC 2024)
+
+| Dettagli del risultato | |
+| --- | --- |
+| CHA₂DS₂-VA (senza il sesso) | 2 punti |
+| ICTUS/TE all’anno senza anticoagulazione | 2,2% |
+
+
+### 3
+
+Nessuna indicazione all’anticoagulazione in base al punteggio (ESC 2024)
+
+| Dettagli del risultato | |
+| --- | --- |
+| CHA₂DS₂-VA (senza il sesso) | 0 punti |
+| ICTUS/TE all’anno senza anticoagulazione | 1,3% |
+

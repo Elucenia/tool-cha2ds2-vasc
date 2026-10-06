@@ -157,7 +157,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "CHA 2 DS 2 VASc/Lip 2010 e CHA 2 DS 2 VA/ESC 2024; máximo 9/8",
-    "implementationVersion": "cha2ds2-vasc@native-2026-10-03+a3a1f69df8a8",
+    "implementationVersion": "cha2ds2-vasc@native-2026-10-05+d9b8ccb45efb",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/19762550/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -304,7 +304,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a"
+      "implementationHash": "d9b8ccb45efb9b6527ce47654b48095f9f8b519b9d8837f33e66b2dd7dfc18e1",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "cha2ds2-vasc@native-2026-10-03+a3a1f69df8a8",
+          "previousImplementationHash": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a",
+          "implementationHash": "d9b8ccb45efb9b6527ce47654b48095f9f8b519b9d8837f33e66b2dd7dfc18e1",
+          "scientificBodySha256": "8df9dc935621d656246773ec9c35f6c0d3cc2b93a15205aa2b0c201ca231c5cf",
+          "metadataContractHash": "518f011abe54b216c6935ef5c97388e0b6895b2fe3cadd8cd09f2d6ad7baa949",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A publicação Lip 2010 avaliou estratificação de tromboembolismo em pacientes com fibrilação atrial e descreveu capacidade preditiva modesta dos esquemas comparados. Categorias ou taxas observadas nessa coorte não são uma garantia individual de risco zero. A variante CHA2DS2-VA e decisões de anticoagulação exigem a diretriz e a população correspondentes à edição utilizada.",
     "sourceLimitEvidence": {
@@ -323,15 +351,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/cha2ds2-vasc/calculator.js",
-    "bytes": 5151,
-    "sha256": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a"
+    "bytes": 5356,
+    "sha256": "d9b8ccb45efb9b6527ce47654b48095f9f8b519b9d8837f33e66b2dd7dfc18e1"
   },
-  "sourceToolSha256": "2c7f06548c61316d2d2aa317a1911436c2d7e0589b743275abdb1e6c27c59e71",
+  "sourceToolSha256": "ad0d8415dbee325909513030d7550336779e0f0f02135edb5ac1d5e40790575e",
   "omittedFullReferenceBanks": [
     {
       "rows": 192,
       "sha256": "69ad0c28142b662cfdd2b76d87ddf1fc8738e2dca19126469120f9411ac3b001",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

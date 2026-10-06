@@ -1,0 +1,222 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "cha2ds2-vasc",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "014d7200a33a27ce5424eb6d37c9e421e2c1fc2c",
+    "oldEngineSha256": "a3a1f69df8a87cdc7f9673f9460aed5b55d936ffac8cf802cb21c981b3a3544a",
+    "currentEngineSha256": "d9b8ccb45efb9b6527ce47654b48095f9f8b519b9d8837f33e66b2dd7dfc18e1"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Todos os fatores, idade ≥ 75: 9 pontos (CHA₂DS₂-VA 8)",
+      "input": {
+        "icc": true,
+        "has": true,
+        "idade": "2",
+        "dm": true,
+        "avc": true,
+        "vasc": true,
+        "fem": true
+      },
+      "publicOutput": {
+        "id": "cha2ds2-vasc",
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "CHA₂DS₂-VASc",
+        "raw": {
+          "score": 9,
+          "va": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 9,
+          "va": 8
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "CHA₂DS₂-VASc",
+        "level": "high",
+        "verdict": "Anticoagulação oral recomendada (ESC 2024)",
+        "rows": [
+          [
+            "CHA₂DS₂-VA (sem o sexo)",
+            "8 pontos"
+          ],
+          [
+            "AVC/TE ao ano sem anticoagulação",
+            "15,2%"
+          ]
+        ],
+        "raw": {
+          "score": 9,
+          "va": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Hipertensão + 65 a 74 anos: CHA₂DS₂-VA 2, anticoagulação recomendada",
+      "input": {
+        "has": true,
+        "idade": "1",
+        "icc": false,
+        "dm": false,
+        "avc": false,
+        "vasc": false,
+        "fem": false
+      },
+      "publicOutput": {
+        "id": "cha2ds2-vasc",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "CHA₂DS₂-VASc",
+        "raw": {
+          "score": 2,
+          "va": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "va": 2
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "CHA₂DS₂-VASc",
+        "level": "high",
+        "verdict": "Anticoagulação oral recomendada (ESC 2024)",
+        "rows": [
+          [
+            "CHA₂DS₂-VA (sem o sexo)",
+            "2 pontos"
+          ],
+          [
+            "AVC/TE ao ano sem anticoagulação",
+            "2,2%"
+          ]
+        ],
+        "raw": {
+          "score": 2,
+          "va": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Mulher sem outros fatores: VASc 1 / VA 0, sem indicação",
+      "input": {
+        "fem": true,
+        "idade": "0",
+        "icc": false,
+        "has": false,
+        "dm": false,
+        "avc": false,
+        "vasc": false
+      },
+      "publicOutput": {
+        "id": "cha2ds2-vasc",
+        "main": [
+          "1",
+          "pontos"
+        ],
+        "label": "CHA₂DS₂-VASc",
+        "raw": {
+          "score": 1,
+          "va": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 1,
+          "va": 0
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "pontos"
+        ],
+        "label": "CHA₂DS₂-VASc",
+        "level": "low",
+        "verdict": "Sem indicação de anticoagulação pelo escore (ESC 2024)",
+        "rows": [
+          [
+            "CHA₂DS₂-VA (sem o sexo)",
+            "0 pontos"
+          ],
+          [
+            "AVC/TE ao ano sem anticoagulação",
+            "1,3%"
+          ]
+        ],
+        "raw": {
+          "score": 1,
+          "va": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

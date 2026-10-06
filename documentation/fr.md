@@ -89,3 +89,37 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Anticoagulation orale recommandée (ESC 2024)
+
+| Détails du résultat | |
+| --- | --- |
+| CHA₂DS₂-VA (sans le sexe) | 8 points |
+| AVC/TE par an sans anticoagulation | 15,2% |
+
+
+### 2
+
+Anticoagulation orale recommandée (ESC 2024)
+
+| Détails du résultat | |
+| --- | --- |
+| CHA₂DS₂-VA (sans le sexe) | 2 points |
+| AVC/TE par an sans anticoagulation | 2,2% |
+
+
+### 3
+
+Aucune indication d’anticoagulation selon le score (ESC 2024)
+
+| Détails du résultat | |
+| --- | --- |
+| CHA₂DS₂-VA (sans le sexe) | 0 points |
+| AVC/TE par an sans anticoagulation | 1,3% |
+
